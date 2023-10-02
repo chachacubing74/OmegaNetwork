@@ -1,0 +1,756 @@
+<!doctype html>
+<html>
+<head>
+<meta name='keywords' content="time to cube, Time to cube, Time To Cube, Time to Cube, Rubik Cube Timer, Rubiks cube timer, Rubik's cube timer, rubik cube timer, rubik's cube timer, puzzle timer, speedsolving timer, speedcubing timer ">
+<title>Time To Cube</title>
+<style>
+body
+{background:lightgrey;}
+#save
+{background:darkgreen;}
+#clear
+{background:tomato;}
+#share
+{background:lightblue;
+color:black;
+border:black;}
+#white
+{color:white;}
+::placeholder
+{color:white;}
+</style>
+<script>
+function onClick() {
+window.alert(" Your Times Have Saved");
+}
+function onClick2() {
+window.alert("Your Times Are Being Removed");
+}
+function onClick3() {
+window.alert("The Most Recent Puzzle Time Has Been Marked");
+}
+function onClick4() {
+window.alert("You Have Been Logged On");
+}
+function onClick5() {
+window.alert("How the Cube is held when scrambling is traditionally white top green front for 3*3*3");
+}
+</script>
+</head>
+<body>
+<h1>Time-To-Cube</h1>
+<p>Input cubing times, share, and save</p>
+<a href='mailto:;'
+<button id="share">Share</button>
+</a>
+<br>
+<form>
+<label>Session</label><input type="number" style="width:50px" value="1" min="0" max="99">
+<br>
+<br>
+Format  
+<select>
+    <option>mo3</option>
+    <option>ao5</option>
+    <option>ao12</option>
+    <option>ao25</option>
+    <option selected>ao30</option>
+    <option>ao50</option>
+    <option>ao75</option>
+    <option>aoI00</option>
+    <option>ao200</option>
+    <option>----</option>
+    </select>
+<center>
+<br>
+<select>
+<option>Select Puzzle</option>
+<optgroup style='color:black;' label='+WCA+'>
+<option>3*3*3</option>
+<option>2*2*2</option>
+<option>4*4*4</option>
+<option>5*5*5</option>
+<option>6*6*6</option>
+<option>7*7*7+</option>
+<option>3BLD</option>
+<option>3MBLD</option>
+<option>4BLD</option>
+<option>5BLD</option>
+<option>Fewest Moves</option>
+<option>Pyraminx</option>
+<option>Skewb</option>
+<option>One-Hand</option>
+<option>Square-1</option>
+<option>Megaminx</option>
+<option>Clock</option>
+</optgroup>
+<optgroup label='+Relays+'>
+    <option>2~5</option>
+    <option>2~7</option>
+    <option>2~I0</option>
+    <option>4~7</option>
+    <option>Mini Guilford</option>
+    <option>Full Guilford</option>
+    <option>3*3*3's</option>
+    </optgroup>
+<optgroup label='+Unoffical+'>
+<option>Dino Skewb</option>
+<option>Void</option>
+<option>Cuboid</option>
+<option>Kibiminx</option>
+<option>Rainbow Ball</option>
+<option>Phantom Cube</option>
+<option>Ghost Cube</option>
+<option>Duo Pyraminx</option>
+<option>FTO</option>
+<option>Mirror Blocks</option>
+<option>Master Pyraminx</option>
+<option>Rubik Magic</option>
+<option>Rubik Master Magic</option>
+<option>Feet</option>
+</optgroup>
+<optgroup label='+Non Twisty-Puzzles+'>
+<option>Puzzle</option>
+<option>15- square</option>
+<option>Stack Cups</option>
+<option>Pop-It</option>
+<option>Other</option>
+<option>---</option>
+</optgroup>
+</select>
+</center>
+<br>
+<br>
+<br>
+<center>
+<input type="tel"> <input type="tel"> <input type="tel">  <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<button type="reset" id="clear" onclick="onClick2()">Clear Times</button>
+</form>
+<br>
+<br>
+<form>
+<button type="button" onclick="onClick()" id="save">Save Times</button>
+</form>
+</center>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<label>Session</label><input type="number" style="width:50px" value="2" min="0" max="99">
+<center>
+<br>
+<select>
+<option>Select Puzzle</option>
+<optgroup style='color:black;' label='WCA'>
+<option>3*3*3</option>
+<option>2*2*2</option>
+<option>4*4*4</option>
+<option>5*5*5</option>
+<option>6*6*6</option>
+<option>7*7*7+</option>
+<option>3BLD</option>
+<option>3MBLD</option>
+<option>4BLD</option>
+<option>5BLD</option>
+<option>Fewest Moves</option>
+<option>Pyraminx</option>
+<option>Skewb</option>
+<option>One-Hand</option>
+<option>Square-1</option>
+<option>Megaminx</option>
+<option>Clock</option>
+</optgroup>
+<optgroup label='Relays'>
+    <option>2~5</option>
+    <option>2~7</option>
+    <option>2~I0</option>
+    <option>4~7</option>
+    <option>Mini Guilford</option>
+    <option>Full Guilford</option>
+    <option>3*3*3's</option>
+    </optgroup>
+<optgroup label='Unoffical'>
+<option>Dino Skewb</option>
+<option>Void</option>
+<option>Cuboid</option>
+<option>Kibiminx</option>
+<option>Rainbow Ball</option>
+<option>Phantom Cube</option>
+<option>Ghost Cube</option>
+<option>Duo Pyraminx</option>
+<option>FTO</option>
+<option>Mirror Blocks</option>
+<option>Master Pyraminx</option>
+<option>Rubik Magic</option>
+<option>Rubik Master Magic</option>
+<option>Feet</option>
+</optgroup>
+<optgroup label='Non Twisty-Puzzles'>
+<option>Puzzle</option>
+<option>15- square</option>
+<option>Stack Cups</option>
+<option>Pop-It</option>
+<option>Other</option>
+<option>---</option>
+</optgroup>
+</select>
+</center>
+<br>
+<br>
+<br>
+<center>
+<input type="tel"> <input type="tel"> <input type="tel">  <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<button type="reset" id="clear" onclick="onClick2()">Clear Times</button>
+</form>
+<br>
+<br>
+<form>
+<button type="button" onclick="onClick()" id="save">Save Times</button>
+</form>
+</center>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<label>Session</label><input type="number" style="width:50px" value="3" min="0" max="99">
+<center>
+<br>
+<select>
+<option>Select Puzzle</option>
+<optgroup style='color:black;' label='WCA'>
+<option>3*3*3</option>
+<option>2*2*2</option>
+<option>4*4*4</option>
+<option>5*5*5</option>
+<option>6*6*6</option>
+<option>7*7*7+</option>
+<option>3BLD</option>
+<option>3MBLD</option>
+<option>4BLD</option>
+<option>5BLD</option>
+<option>Fewest Moves</option>
+<option>Pyraminx</option>
+<option>Skewb</option>
+<option>One-Hand</option>
+<option>Square-1</option>
+<option>Megaminx</option>
+<option>Clock</option>
+</optgroup>
+<optgroup label='Relays'>
+    <option>2~5</option>
+    <option>2~7</option>
+    <option>2~I0</option>
+    <option>4~7</option>
+    <option>Mini Guilford</option>
+    <option>Full Guilford</option>
+    <option>3*3*3's</option>
+    </optgroup>
+<optgroup label='Unoffical'>
+<option>Dino Skewb</option>
+<option>Void</option>
+<option>Cuboid</option>
+<option>Kibiminx</option>
+<option>Rainbow Ball</option>
+<option>Phantom Cube</option>
+<option>Ghost Cube</option>
+<option>Duo Pyraminx</option>
+<option>FTO</option>
+<option>Mirror Blocks</option>
+<option>Master Pyraminx</option>
+<option>Rubik Magic</option>
+<option>Rubik Master Magic</option>
+<option>Feet</option>
+</optgroup>
+<optgroup label='Non Twisty-Puzzles'>
+<option>Puzzle</option>
+<option>15- square</option>
+<option>Stack Cups</option>
+<option>Pop-It</option>
+<option>Other</option>
+<option>---</option>
+</optgroup>
+</select>
+</center>
+<br>
+<br>
+<br>
+<center>
+<input type="tel"> <input type="tel"> <input type="tel">  <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<button type="reset" id="clear" onclick="onClick2()">Clear Times</button>
+</form>
+<br>
+<br>
+<form>
+<button type="button" onclick="onClick()" id="save">Save Times</button>
+</form>
+</center>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<label>Session</label><input type="number" style="width:50px" value="4" min="0" max="99">
+<center>
+<br>
+<select>
+<option>Select Puzzle</option>
+<optgroup style='color:black;' label='WCA'>
+<option>3*3*3</option>
+<option>2*2*2</option>
+<option>4*4*4</option>
+<option>5*5*5</option>
+<option>6*6*6</option>
+<option>7*7*7+</option>
+<option>3BLD</option>
+<option>3MBLD</option>
+<option>4BLD</option>
+<option>5BLD</option>
+<option>Fewest Moves</option>
+<option>Pyraminx</option>
+<option>Skewb</option>
+<option>One-Hand</option>
+<option>Square-1</option>
+<option>Megaminx</option>
+<option>Clock</option>
+</optgroup>
+<optgroup label='Relays'>
+    <option>2~5</option>
+    <option>2~7</option>
+    <option>2~I0</option>
+    <option>4~7</option>
+    <option>Mini Guilford</option>
+    <option>Full Guilford</option>
+    <option>3*3*3's</option>
+    </optgroup>
+<optgroup label='Unoffical'>
+<option>Dino Skewb</option>
+<option>Void</option>
+<option>Cuboid</option>
+<option>Kibiminx</option>
+<option>Rainbow Ball</option>
+<option>Phantom Cube</option>
+<option>Ghost Cube</option>
+<option>Duo Pyraminx</option>
+<option>FTO</option>
+<option>Mirror Blocks</option>
+<option>Master Pyraminx</option>
+<option>Rubik Magic</option>
+<option>Rubik Master Magic</option>
+<option>Feet</option>
+</optgroup>
+<optgroup label='Non Twisty-Puzzles'>
+<option>Puzzle</option>
+<option>15- square</option>
+<option>Stack Cups</option>
+<option>Pop-It</option>
+<option>Other</option>
+<option>---</option>
+</optgroup>
+</select>
+</center>
+<br>
+<br>
+<br>
+<center>
+<input type="tel"> <input type="tel"> <input type="tel">  <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<button type="reset" id="clear" onclick="onClick2()">Clear Times</button>
+</form>
+<br>
+<br>
+<form>
+<button type="button" onclick="onClick()" id="save">Save Times</button>
+</form>
+</center>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form>
+<label>Session</label><input type="number" style="width:50px" value="5" min="00" max="99">
+<center>
+<select>
+<option>Select Puzzle</option>
+<option>3*3*3</option>
+<option>2*2*2</option>
+<option>4*4*4</option>
+<option>5*5*5</option>
+<option>6*6*6</option>
+<option>7*7*7+</option>
+<option>Blind</option>
+<option>Pyraminx</option>
+<option>Skewb</option>
+<option>One-Hand</option>
+<option>Square-1</option>
+<option>Megaminx</option>
+<option>Rubik Magic</option>
+<option>Clock</option>
+<option>Dino Skewb</option>
+<option>Void</option>
+<option>Cuboid</option>
+<option>Kibiminx</option>
+<option>Fewest Moves</option>
+<option>Rainbow Ball</option>
+<option>15- square</option>
+<option>Stacking Cups</option>
+<option>FTO</option>
+<option>Mirror Blocks</option>
+<option>Pop-It</option>
+<option>Master Pyraminx</option>
+<option>Rubik Master Magic</option>
+<option>Puzzle</option>
+<option>2~5 Relay</option>
+<option>2~7 Relay</option>
+<option>2~10 Relay</option>
+<option>Guilford Challenge</option>
+<option>Mini Guilford Challenge</option>
+<option>Other</option>
+</select>
+</center>
+<br>
+<br>
+<br>
+<center>
+<input type="tel"> <input type="tel"> <input type="tel">  <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"> <input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<input type="tel">  <input type="tel">  <input type="tel"><input type="tel">  <input type="tel">
+<br>
+<br>
+<button type="reset" id="clear" onclick="onClick2()">Clear Times</button>
+</form>
+<br>
+<br>
+<form>
+<button type="button" onclick="onClick()" id="save">Save Times</button>
+</form>
+</center>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>Settings</h2>
+<p>preferences</p>
+<br>
+<form>
+<label>Sound/Volume</label>
+<input type="range">
+<br>
+<br>
+<input type="checkbox">Mute
+<br>
+<br>
+<h3>Timing </h3>
+<br>
+<select>
+<option>Stopwatch</option>
+<option>Stackmat G4 / G5</option>
+<option>Stackmat G2 / G3</option>
+<option>Stackmat G0 / G1</option>
+<option>Stackmat Early 2000's</option>
+<option>Moyu Timer</option>
+<option>Digital / Mobile Timer</option>
+<option>YJ Timer</option>
+<option>Other</option>
+</select>
+<br>
+<br>
+<label>Scrambling</label>
+<br>
+<br>
+<h4>Scrambler</h4>
+
+    <input list='a!' value='NONE'>
+    <datalist id='a!'>
+        <option>Cstimer</option>
+        <option>Ruwix</option>
+        <option>CubeTimer</option>
+           <option>None</option>
+    <option>Cell Phone</option>
+    <option>MP4</option>
+    <option>MP3</option>
+    <option>Other</option>
+    <option>App</option>
+    <option>Website</option>
+    <option>Download</option>
+    <option>Other</option>
+    </datalist>
+    <br>
+    <br>
+    <telarea cols='30' rows='25'> Scrambles:</telarea>
+    <br>
+    <br>
+    <br>
+<label>Inspection</label>
+<br>
+<br>
+<select>
+<option>Off</option>
+<option>3.0 sec</option>
+<option>5.0 sec</option>
+<option>8.5 sec</option>
+<option>10.0 sec</option>
+<option>12.5 sec</option>
+<option>15.0 sec</option>
+</select>
+<br>
+<br>
+<input type="checkbox">Use End Millisecond s.mm(m)
+<br>
+<br>
+<h4>Mark most recent time as</h4>
+<br>
+<fieldset style="width:100px; color:black;">
+<input type="checkbox">DNF
+<br>
+<input type="checkbox">DNS
+<br>
+<input type="checkbox">+2
+<br>
+<input type="checkbox">Best
+<br>
+<input type="checkbox">Worst
+<br>
+<br>
+<button type="button" onclick="onClick3()">Mark Time</button>
+<br>
+</fieldset>
+<br>
+<br>
+<label>Times Per Session</label>
+<input type="number" value="30" min="30" max="30" style="width:75px" disabled='disabled'>
+<br>
+<br>
+<legend><h3>Account Settings</h3></legend>
+<br>
+<br>
+<h3>Colour Scheme</h3>
+<br>
+<label>Cube</label>
+<br>
+<br>
+<input type="color">
+<input type="color">
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<br>
+<br>
+<label>Pyraminx</label>
+<br>
+<br>
+<input type="color">
+<input type="color">
+<input type='color'>
+<input type='color'>
+<br>
+<br>
+<label>Skewb</label>
+<br>
+<br>
+<input type="color">
+<input type="color">
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<br>
+<br>
+<label>Square-I</label>
+<br>
+<br>
+<input type="color">
+<input type="color">
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<br>
+<br>
+<label>Megaminx</label>
+<br>
+<br>
+<input type="color">
+<input type="color">
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<input type="color">
+<input type="color">
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<input type='color'>
+<br>
+<br>
+<br>
+<br>
+
+<a href=''>
+<button type="button">Reset Settings</button>
+</a>
+</form>
+</body>
+</html>

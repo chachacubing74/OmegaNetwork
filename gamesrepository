@@ -1,0 +1,18 @@
+>>> <!doctype html>
+<html>
+<head>
+    <style>
+    body {
+        background:dodgerblue;
+    }
+    </style>
+    <title>
+        Games Repository
+        </title>
+</head>
+<body>
+    <h1>Games Repository</h1>
+    <hr>
+
+</body>
+</html>
